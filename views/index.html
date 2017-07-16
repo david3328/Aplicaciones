@@ -5,30 +5,34 @@
     <title>Inicio | Goal</title>
     <meta name="description" content="undefined"/>
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
-    <link rel="icon" type="image/png" href="views/img/goal-16.png"/>
-    <link rel="stylesheet" href="views/css/materialize.css"/>
+    <link rel="icon" type="image/png" href="img/goal-16.png"/>
+    <link rel="stylesheet" href="css/materialize.css"/>
     <link rel="stylesheet" href="https://file.myfontastic.com/CXWrkoNkybTgdzDQrCHdKV/icons.css"/>
   </head>
   <body>
     <nav class="goal black">
       <div class="container">
         <ul class="right hide-on-med-and-down">
-          <li><a class="cabezera__link roboto-light" href="#">Registrate</a></li>
-          <li><a class="cabezera__link roboto-light" href="#">Iniciar Sesión</a></li>
+          <li><a class="cabezera__link roboto-light" href="#modal1">Registrate</a></li>
+          <li><a class="cabezera__link roboto-light" href="#modal2">Iniciar Sesión</a></li>
         </ul>
       </div>
       <ul class="side-nav" id="slide-out">
-        <li><a class="roboto-light" href="#">Registrate</a></li>
-        <li><a class="roboto-light" href="#">Iniciar Sesión</a></li>
+        <li><a class="roboto-light" href="#modal1">Registrate</a></li>
+        <li><a class="roboto-light" href="#modal2">Iniciar Sesión</a></li>
       </ul><a class="button-collapse" href="#" data-activates="slide-out"><i class="icon-menu"></i></a>
     </nav>
+<<<<<<< HEAD
     <main class="main__content" id="main">
+=======
+    <main class="main__content">
+>>>>>>> 5cffae9ce85c11fbe3642432560d94fdd504a2f5
       <div class="section-present">
         <section class="present">
-          <article class="present__cont container"><img class="hand" src="views/img/hand-l.png" alt="hand"/>
+          <article class="present__cont container"><img class="hand" src="../img/hand-l.png" alt="hand"/>
             <div class="row">
               <div class="col s12 m12 l6 aux-grid">
-                <div class="present__info"><img class="present__logo" src="views/img/goal-200.png" alt="goal"/>
+                <div class="present__info"><img class="present__logo" src="img/goal-200.png" alt="goal"/>
                   <p class="present__slogan roboto-regular"><strong>¡Busca </strong>y <strong>reserva tu cancha!</strong></p><strong class="present__description roboto-light">Goal te permite encontrar las canchas mas cercanas a ti</strong>
                   <form class="present__form">
                     <div class="row">
@@ -114,7 +118,7 @@
                 </div>
               </div>
               <div class="col s12 m6 l6 aux-order aux-order--l">
-                <div class="img__cont"><img class="player" src="views/img/player-s.png" alt="player" srcset="views/img/player-l.png 1200w, views/img/player-m.png 992w, views/img/player-s.png 600w"/></div>
+                <div class="img__cont"><img class="player" src="../img/player-s.png" alt="player" srcset="../img/player-l.png 1200w, ../img/player-m.png 992w, ../img/player-s.png 600w"/></div>
               </div>
             </div>
           </article>
@@ -135,7 +139,7 @@
                 </div>
               </div>
               <div class="col s12 m6 l6">
-                <div class="img__cont"><img class="coach" src="views/img/coach-s.png" alt="coach" srcset="views/img/coach-l.png 1200w, views/img/coach-m.png 992w, views/img/coach-s.png 600w"/></div>
+                <div class="img__cont"><img class="coach" src="../img/coach-s.png" alt="coach" srcset="../img/coach-l.png 1200w, ../img/coach-m.png 992w, ../img/coach-s.png 600w"/></div>
               </div>
             </div>
           </article>
@@ -203,11 +207,80 @@
         </div>
       </footer>
     </main>
-    <script src="views/js/jquery-3.1.1.min.js"></script>
-    <script src="views/js/vue.js"></script>
-    <script src="views/js/axios.js"></script>
-    <script src="views/js/app.js"></script>		
-    <script src="views/js/materialize.js"></script>
-    <script src="views/js/main.js"></script>
+    <div class="modal modal-fixed-footer" id="modal1">
+      <div class="modal-content">
+        <h4>Registrate</h4>
+        <form>
+          <div class="row input-field-h">
+            <div class="col s12 m6 l6">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" id="nombres"/>
+                  <label for="nombres">Nombres</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="email" id="email"/>
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="password" id="password"/>
+                  <label for="password">Contraseña</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <div class="row center">
+                <button class="waves-effect waves-light btn">REGISTRATE</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal modal-fixed-footer" id="modal2">
+      <div class="modal-content">
+        <h4>Iniciar Sersion</h4>
+        <form>
+          <div class="row input-field-h">
+            <div class="col s12 m6 l6">
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="text" id="nombres"/>
+                  <label for="nombres">Nombres</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="email" id="email"/>
+                  <label for="email">Email</label>
+                </div>
+              </div>
+              <div class="row">
+                <div class="input-field col s12">
+                  <input type="password" id="password"/>
+                  <label for="password">Contraseña</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m12 l12">
+              <div class="row center">
+                <button class="waves-effect waves-light btn">REGISTRATE</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
