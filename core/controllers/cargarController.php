@@ -13,15 +13,15 @@
   include('core/models/classConexion.php');
 
   $db = new Conexion();
-  $sql = $db->query("SELECT * FROM foros");
+  $sql = $db->query("SELECT * FROM company");
   if($db->rows($sql) > 0) {
     while($data = $db->recorrer($sql)) {
-      $categorias[$data['id']] = $data;
+      $company[$data['id']] = $data;
     }
   } else {
-    $categorias = false;
+    $company = false;
   }
   $db->liberar($sql);
   $db->close();
-  echo json_encode($categorias);
+  echo json_encode($company);
 ?>
