@@ -1,21 +1,210 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Indice</title>
-</head>
-<body>	
-	<div id="main">
-		<div class="lista">
-			<ul>
-				<li v-for="persona in personas">
-					{{persona.nombre}}
-				</li>
-			</ul>
-	</div>
-	</div>
-	<script src="https://unpkg.com/vue"></script>
-	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-	<script src="views/js/app.js"></script>
-</body>
+<html lang="es">
+  <head>
+    <meta charset="utf-8"/>
+    <title>Inicio | Goal</title>
+    <meta name="description" content="undefined"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <link rel="icon" type="image/png" href="img/goal-16.png"/>
+    <link rel="stylesheet" href="css/materialize.css"/>
+    <link rel="stylesheet" href="https://file.myfontastic.com/CXWrkoNkybTgdzDQrCHdKV/icons.css"/>
+  </head>
+  <body>
+    <nav class="goal black">
+      <div class="container">
+        <ul class="right hide-on-med-and-down">
+          <li><a class="cabezera__link roboto-light" href="#">Registrate</a></li>
+          <li><a class="cabezera__link roboto-light" href="#">Iniciar Sesión</a></li>
+        </ul>
+      </div>
+      <ul class="side-nav" id="slide-out">
+        <li><a class="roboto-light" href="#">Registrate</a></li>
+        <li><a class="roboto-light" href="#">Iniciar Sesión</a></li>
+      </ul><a class="button-collapse" href="#" data-activates="slide-out"><i class="icon-menu"></i></a>
+    </nav>
+    <main class="main__content">
+      <div class="section-present">
+        <section class="present">
+          <article class="present__cont container"><img class="hand" src="../img/hand-l.png" alt="hand"/>
+            <div class="row">
+              <div class="col s12 m12 l6 aux-grid">
+                <div class="present__info"><img class="present__logo" src="img/goal-200.png" alt="goal"/>
+                  <p class="present__slogan roboto-regular"><strong>¡Busca </strong>y <strong>reserva tu cancha!</strong></p><strong class="present__description roboto-light">Goal te permite encontrar las canchas mas cercanas a ti</strong>
+                  <form class="present__form">
+                    <div class="row">
+                      <div class="input-field col s12 m4 l12"><i class="icon-calendar prefix form__icon"></i>
+                        <select class="form__select">
+                          <option value="">Elig una opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                        </select>
+                      </div>
+                      <div class="input-field col s12 m4 l12"><i class="icon-time prefix form__icon"></i>
+                        <select class="form__select">
+                          <option value="">Elig una opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                        </select>
+                      </div>
+                      <div class="input-field col s12 m4 l12"><i class="icon-pin prefix form__icon"></i>
+                        <select class="form__select">
+                          <option value="">Elig una opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                          <option value="">Opc</option>
+                        </select>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="section-characteristics">
+        <div class="characteristic__bg">
+          <section class="characteristics">
+            <article class="characteristic">
+              <section class="characteristic__cont container"><i class="icon-sucess characteristic__icon"></i>
+                <h2 class="characteristic__title roboto-regular"> Fácil de usar</h2>
+                <ul class="characteristic__description roboto-light">
+                  <li>En Goal encontraras de forma muy facil las canchas que esten más cercanas de tí.</li>
+                  <li>Asi no perderas tiempo recorriendo establecimientos.</li>
+                </ul>
+              </section>
+            </article>
+            <article class="characteristic">
+              <section class="characteristic__cont container"><i class="icon-speed characteristic__icon"></i>
+                <h2 class="characteristic__title roboto-regular"> Comodo y rápido</h2>
+                <ul class="characteristic__description roboto-light"> 
+                  <li>Reserva las canchas a la hora que quieras desde tu computadora, celular o tablet.</li>
+                  <li>Goal esta diseñado para que se pueda usar desde cualquier dispositivo</li>
+                </ul>
+              </section>
+            </article>
+            <article class="characteristic">
+              <section class="characteristic__cont container"><i class="icon-users characteristic__icon"></i>
+                <h2 class="characteristic__title roboto-regular"> Social</h2>
+                <ul class="characteristic__description roboto-light"> 
+                  <li>Si no tienes los equipos totalmente conformados, no te preocupes con Goal podras armar tu partido con amigos o personas que esten buscando reservar canchas.</li>
+                </ul>
+              </section>
+            </article>
+          </section>
+        </div>
+      </div>
+      <div class="section-information">
+        <section class="information">
+          <article class="information__cont container">
+            <div class="row aux-cont">
+              <div class="col s12 m6 l6 aux-order main-center">
+                <div class="information__text">
+                  <h2 class="information__title roboto-regular">¿Estas buscando una cancha para jugar?</h2>
+                  <p class="information__subtitle roboto-regular">conoce algunas de las ventajas que te ofrecemos:</p>
+                  <ul class="information__description roboto-light"> 
+                    <li>Reserva canchas sencillamente.</li>
+                    <li>Encuentra con quien jugar o completa los jugadores faltantes para poder empezar a jugar.</li>
+                    <li>Descargando nuestra app resiviras notificaciones de canchas buscando jugadores.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col s12 m6 l6 aux-order aux-order--l">
+                <div class="img__cont"><img class="player" src="../img/player-s.png" alt="player" srcset="../img/player-l.png 1200w, ../img/player-m.png 992w, ../img/player-s.png 600w"/></div>
+              </div>
+            </div>
+          </article>
+        </section>
+        <section class="information">
+          <article class="information__cont container">
+            <div class="row aux-cont">
+              <div class="col s12 m6 l6 main-center">
+                <div class="information__text">
+                  <h2 class="information__title roboto-regular">¿Eres dueño de una cancha para jugar?</h2>
+                  <p class="information__subtitle roboto-regular">conoce algunas de las ventajas que te ofrecemos: </p>
+                  <ul class="information__description roboto-light">
+                    <li>Tendras un sistema para administrar las reservación de sus canchas.</li>
+                    <li> Aumenta la visibilidad para que las canchas esten siempre llenas.</li>
+                    <li>Se diminuira el número de canchas vacias.</li>
+                    <li>Aumento de clientes.</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col s12 m6 l6">
+                <div class="img__cont"><img class="coach" src="../img/coach-s.png" alt="coach" srcset="../img/coach-l.png 1200w, ../img/coach-m.png 992w, ../img/coach-s.png 600w"/></div>
+              </div>
+            </div>
+          </article>
+        </section>
+      </div>
+      <div class="section-contact">
+        <section class="contact">
+          <article class="contact__info">
+            <section class="contact__cont container">
+              <h2 class="contact__title roboto-regular">contáctanos</h2>
+              <p class="contact__description roboto-light">Estar comunicados es bueno. Envianos un email para resolver todas sus dudas sea que estes buscando alguna cancha para jugar con tus amigos o seas dueño de alguna y quieras obtener información.</p>
+            </section>
+          </article>
+          <article class="contact__form">
+            <div class="contact__form-cont container">
+              <form class="contact__formulario">
+                <div class="row input-field-h">
+                  <div class="col s12 m6 l6">
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input type="text" id="nombres"/>
+                        <label for="nombres">Nombres</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input class="validate" type="email" id="email"/>
+                        <label for="email">Email</label>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="input-field col s12">
+                        <input type="text" id="empresa"/>
+                        <label for="empresa">Empresa</label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col s12 m6 l6">
+                    <div class="row">
+                      <div class="input-field col s12 input-field-h">
+                        <textarea class="materialize-textarea" rows="40" id="textarea1"></textarea>
+                        <label for="textarea1">Comentario</label>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col s12 m12 l12">
+                    <div class="row center">
+                      <button class="waves-effect waves-light btn contact__btn">ENVIAR</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </article>
+        </section>
+      </div>
+      <footer class="main__footer">
+        <div class="footer">
+          <section class="footer__cont container">
+            <p class="footer__descripcion">Todos los derechos reservados</p>
+            <p class="footer__descripcion">Siguenos en:</p>
+          </section>
+        </div>
+      </footer>
+    </main>
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
